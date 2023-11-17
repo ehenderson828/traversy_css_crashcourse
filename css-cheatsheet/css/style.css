@@ -1,0 +1,217 @@
+/*
+* { -- Asterik selector properties apply to everyting.
+    margin: 0;
+    padding: 0;
+}
+*/
+
+body { /* Traversy's style progressions: */
+    /* Color: */
+    background-color: #f4f4f4;
+    color: #555555;
+
+    /* Font: */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    /* Same as above:
+    font: normal 16px Arial, Helvetica, sans-serif; */
+    line-height: 1.6em; /* em is a unit of responsive measure. You can also us px */
+
+    /* Margin, Padding & Borders (box model): */
+    margin: 0px;
+}
+
+a { /* This is a global style for all of the links on the page */
+    text-decoration: none;
+    color: black;
+}
+
+a:hover { /* This is an example of a style placed on a link in a specific state, this one being when you hover over the link with your mouse */
+    color: red;
+}
+
+a:active { /* This style will flash green */
+    color: green;
+}
+
+/* a:visited {  This style replaces the traditional purple for visited links
+    color: black;
+} */
+
+.container { /* Around most of the body */
+    width: 80%; /* A percentage makes this property responsive compared to a weight in pixels. This is the width of the container relative to the width of the page */
+    margin: auto; /* Margin will be set uniformally on all sides */
+}
+
+.button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+} /* This is a sick ass looking button */
+
+.button:hover {
+    background-color: orange;
+    color: white;
+}
+
+.clr {
+    clear: both;
+}
+
+.box-1 {
+    background-color: #333;
+    color: #FFF;
+
+    border-right: 5px /*(size)*/ orange /*(color)*/ solid /*(type)*/;
+    border-left: 5px orange solid;
+    border-top: 5px orange solid;
+    border-bottom: 5px orange solid;
+
+    /* Same as above
+    border: 5px red solid; */
+
+    border-width: 3px;
+    border-bottom-width: 10px;
+    border-top-style: dotted;
+
+    border: 5px orange solid; /* This will override all previous properties */
+
+    padding: 20px;
+
+    margin-top: 20px; /* Adding margin to the top of an element will shift it down */
+    margin: 20px 0;
+}
+
+.box-1 h1 { /* This will target just the h1 within this class */
+    font-family: Comic;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+
+    /* The above are text formatting styles */
+}
+
+.box-2 {
+    border: 3px #ccc dotted;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.box-2 a {
+
+}
+
+.categories {
+    border: 1px #ccc solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.categories h2 {
+    text-align: center;
+}
+
+.categories ul {
+    padding: 0;
+    list-style: square;
+    list-style: none;
+}
+
+.categories li {
+    padding-bottom: 8px;
+    border-bottom: dotted 1px #333;
+}
+
+.my-form {
+    padding: 20px;
+}
+
+.my-form .form-group {
+    padding-bottom: 15px;
+}
+
+.my-form label {
+    display: block; /* This style overrides the base inline style of the label element (labels get their own line) */
+}
+
+.my-form input[type="text"], .my-form textarea {
+    padding: 8px;
+    width: 100%; /* That is 100% of it's container */
+}
+
+.block {
+    float: left;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box; /* Easy fix to make blocks inline with each other */
+}
+
+#main-block {
+    float: left;
+    width: 70%;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+#sidebar {
+    float: right;
+    width: 30%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.p-box {
+    width: 800px;
+    height: 500px;
+    border: 1px solid black;
+    margin-top: 30px;
+    position: relative;
+    background-image: url('../images/bgimage.jpg');
+    background-repeat: no-repeat;
+    background-position: 100px 200px;
+    background-position: center center;
+}
+
+.p-box h1 {
+    position: absolute; /* This absolute position will not apply unless the container it is contained in is relative */
+    top: 100px;
+    left: 200px;
+}
+
+.p-box h2 {
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+}
+
+.fix-me { /* This is a sick property that allows this (button) to stay in the same spot even if you scroll */
+    position: fixed;
+    top: 400px;
+} /* Could be very useful with a navbar */
+
+/* Pseudoclasses: */
+
+.my-list li:first-child {
+    background: red;
+}
+
+.my-list li:last-child {
+    background: blue;
+}
+
+.my-list li:nth-child(5) {
+    background: yellow;
+}
+
+.my-list li:nth-child(even) {
+    background: gray;
+}

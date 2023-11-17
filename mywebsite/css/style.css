@@ -1,0 +1,124 @@
+body {
+    /* Traversy refers to these as common settings they usually start with when designing a website */
+    background-color: #f4f4f4;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em; /* 'em' is a unit of measure, a multiplier that sets a line height to 1.6X the size of the font in the element.*/
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden; /* This property prevents scroll bars even if something is bigger than it's container */
+}
+
+#my-header {
+    background-color: coral;
+    color: #fff;
+}
+
+#navbar {
+    text-align: left;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+}
+
+.dropbtn {
+    background-color: #fafafa;
+    color: rgb(7, 0, 0);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+.dropdown-content a:hover {
+    background-color: coral;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#navbar ul {
+    padding: 0;
+    list-style: none;
+}
+
+#navbar li {
+    display: inline;
+}
+
+#navbar a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+#showcase {
+    background-image: url('../images/showcaseimage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#showcase h1 {
+    color: #fff;
+    font-size: 50px;
+    line-height: 1.6em;
+    padding-top: 30px;
+}
+
+#main {
+    float: left;
+    width: 70%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+#sidebar {
+    float: left;
+    width: 30%;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#main-footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Media queries take effect when certain conditions are met: */
+
+@media(max-width: 600px) {
+    #main {
+        width: 100%;
+        float: none;
+    }
+}
